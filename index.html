@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayush Raj | B.Tech ECE, NIT Hamirpur</title>
+<meta name="description" content="Portfolio of Ayush Raj, first-year ECE student at NIT Hamirpur learning backend development. C and C++ projects.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top">ayush<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch light or dark theme">&#9788;</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">B.Tech ECE &middot; NIT Hamirpur</p>
+      <h1>Hi, I'm <span class="grad">Ayush Raj</span>.</h1>
+      <p class="typed-line">I'm a <span id="typed" class="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">First-year engineering student building my programming base in C and C++, and heading towards backend development with Python and FastAPI.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/ayushraj-007" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>ayush@nit-hamirpur</span></div>
+      <pre id="term"></pre>
+    </div>
+  </section>
+
+  <section class="stats reveal">
+    <div><b data-count="4">0</b><span>projects on GitHub</span></div>
+    <div><b data-count="2">0</b><span>languages: C and C++</span></div>
+    <div><b data-count="2030">0</b><span>graduation batch</span></div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <div class="card">
+        <p>I'm from Nawada, Bihar, and I study Electronics &amp; Communication Engineering at NIT Hamirpur. I started in 2026 and graduate in 2030.</p>
+        <p>I like understanding how things work. I have built an ESP8266 robot car in a robotics workshop, and I write small programs from scratch to learn how a language really behaves.</p>
+        <p>My main track is software development with a backend focus. Cybersecurity is the next area I want to explore after that.</p>
+      </div>
+      <div class="card facts">
+        <h3>Quick facts</h3>
+        <ul>
+          <li><span>Studying</span> B.Tech, Electronics &amp; Communication</li>
+          <li><span>College</span> NIT Hamirpur</li>
+          <li><span>From</span> Nawada, Bihar</li>
+          <li><span>Now</span> C++ practice, object-oriented programming</li>
+          <li><span>Goal</span> Backend developer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <p class="sub">All of these are on my <a href="https://github.com/ayushraj-007" target="_blank" rel="noopener">GitHub</a>. They are practice projects from my first year, each one runs in the terminal.</p>
+    <div class="filters" id="filters">
+      <button class="active" data-f="all">All</button>
+      <button data-f="cpp">C++</button>
+      <button data-f="c">C</button>
+    </div>
+    <div class="grid" id="projectGrid">
+
+      <article class="card project" data-lang="cpp">
+        <span class="chip">C++</span>
+        <h3>Student Result Manager</h3>
+        <p>A menu-driven console program to manage a class's marks.</p>
+        <ul class="feat">
+          <li>Add students by roll number, with first name, last name and grade</li>
+          <li>Checks that a grade is between 0 and 100</li>
+          <li>List all students, search by roll number or name, update a score</li>
+          <li>Class summary and an exit option</li>
+        </ul>
+        <button class="more" aria-expanded="false">What I practised</button>
+        <div class="extra"><p>Arrays that hold roll numbers, names and grades, functions, pointers and references, and loops with a menu. It taught me a lot about debugging my own logic.</p></div>
+        <a href="https://github.com/ayushraj-007/cpp-projects/blob/main/student_result_manager.cpp" target="_blank" rel="noopener">View code &rarr;</a>
+      </article>
+
+      <article class="card project" data-lang="cpp">
+        <span class="chip">C++</span>
+        <h3>Advanced Calculator</h3>
+        <p>A calculator that keeps running until you stop it.</p>
+        <ul class="feat">
+          <li>Add, subtract, multiply, divide and exponent</li>
+          <li>Trigonometry: sin, cos, tan, cosec, sec, cot (angles in degrees)</li>
+          <li>Inverse trigonometry with a domain check, and logarithms</li>
+          <li>Stores up to 100 calculations and shows the history at the end</li>
+        </ul>
+        <button class="more" aria-expanded="false">What I practised</button>
+        <div class="extra"><p>The cmath library, string arrays for history, if/else branching and do-while loops, and converting degrees to radians.</p></div>
+        <a href="https://github.com/ayushraj-007/cpp-projects/blob/main/advance%20calculator.cpp" target="_blank" rel="noopener">View code &rarr;</a>
+      </article>
+
+      <article class="card project" data-lang="cpp">
+        <span class="chip">C++</span>
+        <h3>Guess the Number</h3>
+        <p>The computer picks a random number from 1 to 100.</p>
+        <ul class="feat">
+          <li>Tells you to guess higher or lower after each try</li>
+          <li>Shows how many tries you needed</li>
+        </ul>
+        <button class="more" aria-expanded="false">What I practised</button>
+        <div class="extra"><p>Random numbers with srand and rand, and the do-while loop.</p></div>
+        <a href="https://github.com/ayushraj-007/cpp-projects/blob/main/guess_the_no_game%20.cpp" target="_blank" rel="noopener">View code &rarr;</a>
+      </article>
+
+      <article class="card project" data-lang="c">
+        <span class="chip c">C</span>
+        <h3>Guess the Number Game</h3>
+        <p>My first version of the game, written in C.</p>
+        <ul class="feat">
+          <li>Random number from 1 to 100</li>
+          <li>Higher or lower hints</li>
+          <li>Score based on the number of turns you took</li>
+        </ul>
+        <button class="more" aria-expanded="false">What I practised</button>
+        <div class="extra"><p>C basics: stdio, scanf and printf, random numbers with time, and loops.</p></div>
+        <a href="https://github.com/ayushraj-007/Guess-the-number-game-" target="_blank" rel="noopener">View code &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Programming</h3>
+        <p class="chips"><span>C</span><span>C++</span><span>Python (basics)</span></p>
+        <p class="note">C++: functions, arrays, pointers, references.</p></div>
+      <div class="card"><h3>Tools</h3>
+        <p class="chips"><span>Git &amp; GitHub</span><span>Debugging</span><span>Problem solving</span></p></div>
+      <div class="card"><h3>Electronics</h3>
+        <p class="chips"><span>Arduino</span><span>ESP8266 robot car</span></p>
+        <p class="note">Built in the RoboQuest robotics workshop.</p></div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="reveal">
+    <h2>Learning &amp; next steps</h2>
+    <p class="sub">This is my plan. These are things I am working towards, not things I have already finished.</p>
+    <ol class="timeline">
+      <li class="now"><b>Now</b><h3>Object-oriented C++</h3><p>Building a Bank Account Manager to practise classes and objects.</p></li>
+      <li><b>Next</b><h3>Data structures &amp; algorithms</h3><p>Starting with the basics in C++.</p></li>
+      <li><b>Goal</b><h3>Backend development</h3><p>My goal: build backends and APIs with Python and FastAPI.</p></li>
+      <li><b>Later</b><h3>Cybersecurity</h3><p>Planned as a secondary track.</p></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <div class="card center">
+      <p>Want to talk about projects or learning to code? Email me or find me on GitHub.</p>
+      <div class="btns c">
+        <a class="btn primary" href="https://github.com/ayushraj-007" target="_blank" rel="noopener">github.com/ayushraj-007</a>
+        <a class="btn" href="mailto:ayush080881@gmail.com">ayush080881@gmail.com</a>
+        <button class="btn" id="copyBtn" type="button">Copy email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 Ayush Raj &middot; absolute0.xyz</footer>
+<a href="#top" class="totop" id="toTop" aria-label="Back to top">&uarr;</a>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+
+  /* theme */
+  var root=document.documentElement,saved=null;
+  try{saved=localStorage.getItem('theme')}catch(e){}
+  if(saved)root.setAttribute('data-theme',saved);
+  $('#themeBtn').addEventListener('click',function(){
+    var t=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',t);
+    try{localStorage.setItem('theme',t)}catch(e){}
+  });
+
+  /* mobile menu */
+  var mb=$('#menuBtn'),menu=$('#menu');
+  mb.addEventListener('click',function(){
+    var o=menu.classList.toggle('open');
+    mb.setAttribute('aria-expanded',o);
+  });
+  $$('#menu a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');mb.setAttribute('aria-expanded',false)})});
+
+  /* typed roles */
+  var roles=['B.Tech ECE student','C and C++ learner','future backend developer'],ri=0,ci=0,del=false,el=$('#typed');
+  (function tick(){
+    var w=roles[ri];
+    ci+=del?-1:1;
+    el.textContent=w.slice(0,ci);
+    var d=del?35:75;
+    if(!del&&ci===w.length){del=true;d=1400}
+    else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=300}
+    setTimeout(tick,d);
+  })();
+
+  /* terminal */
+  var lines=['$ whoami','ayush raj','$ cat goal.txt','backend dev: python + fastapi','$ ls projects/','student_result_manager.cpp','advance_calculator.cpp','guess_the_number.cpp  guess_the_number.c'],
+      term=$('#term'),li=0,cc=0,out='';
+  (function type(){
+    if(li>=lines.length){return}
+    var l=lines[li];
+    if(cc<l.length){cc++;term.textContent=out+l.slice(0,cc);setTimeout(type,l.charAt(0)==='$'?55:15)}
+    else{out+=l+'\n';li++;cc=0;term.textContent=out;setTimeout(type,l.charAt(0)==='$'?300:120)}
+  })();
+
+  /* reveal + counters */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');
+      $$('[data-count]').forEach(function(b){
+        if(e.target.contains(b)&&!b.done){b.done=1;var n=+b.getAttribute('data-count'),s=0,step=Math.max(1,Math.round(n/40));
+          var t=setInterval(function(){s+=step;if(s>=n){s=n;clearInterval(t)}b.textContent=s},30)}});
+      io.unobserve(e.target)}})},{threshold:.12});
+  $$('.reveal').forEach(function(r){io.observe(r)});
+
+  /* project filter */
+  $$('#filters button').forEach(function(b){b.addEventListener('click',function(){
+    $$('#filters button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');
+    var f=b.getAttribute('data-f');
+    $$('.project').forEach(function(p){p.style.display=(f==='all'||p.getAttribute('data-lang')===f)?'':'none'});
+  })});
+
+  /* expand details */
+  $$('.more').forEach(function(b){b.addEventListener('click',function(){
+    var x=b.nextElementSibling,o=x.classList.toggle('open');
+    b.setAttribute('aria-expanded',o);b.textContent=o?'Hide details':'What I practised';
+  })});
+
+  /* copy email */
+  $('#copyBtn').addEventListener('click',function(){
+    var b=this,m='ayush080881@gmail.com';
+    function ok(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy email'},1800)}
+    function old(){
+      try{
+        var t=document.createElement('textarea');t.value=m;t.setAttribute('readonly','');
+        t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();
+        var done=document.execCommand('copy');document.body.removeChild(t);
+        if(done){ok()}else{b.textContent=m}
+      }catch(e){b.textContent=m}
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(ok,old)}
+    else{old()}
+  });
+
+  /* scroll progress, back to top, active link */
+  var secs=$$('main section[id]'),links=$$('#menu a');
+  function onScroll(){
+    var h=document.documentElement,sc=h.scrollTop,max=h.scrollHeight-h.clientHeight;
+    $('#progress').style.width=(max>0?sc/max*100:0)+'%';
+    $('#toTop').classList.toggle('show',sc>500);
+    var cur='';secs.forEach(function(s){if(s.getBoundingClientRect().top<140)cur=s.id});
+    links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+})();
+</script>
+</body>
+</html>
